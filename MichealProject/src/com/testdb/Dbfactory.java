@@ -24,16 +24,16 @@ public class Dbfactory {
 	
 	public void setHospitals(){
 		hospitals = new ArrayList<Hospital>();
-//		Hospital hospital1 = new Hospital("»ªÎ÷Ò½Ôº", "¸¾Å®¿Æ", setDoctors1());
-//		Hospital hospital2 = new Hospital("»ªÎ÷Ò½Ôº", "¶ùÍ¯¿Æ", setDoctors2());
-//		Hospital hospital3 = new Hospital("ÖĞÒ½Ò½Ôº", "¾«Éñ¿Æ", setDoctors3());
-//		Hospital hospital4 = new Hospital("ÖĞÒ½Ò½Ôº", "Îå¹Ù¿Æ", setDoctors4());
-		Hospital hospital1 = new Hospital("»ªÎ÷Ò½Ôº");
-		Hospital hospital2 = new Hospital("ÖĞÒ½Ò½Ôº");
-		hospital1.setDepartments("¸¾Å®¿Æ", setDoctors1());
-		hospital1.setDepartments("¶ùÍ¯¿Æ", setDoctors2());
-		hospital2.setDepartments("¾«Éñ¿Æ", setDoctors3());
-		hospital2.setDepartments("Îå¹Ù¿Æ", setDoctors4());
+//		Hospital hospital1 = new Hospital("åè¥¿åŒ»é™¢", "å¦‡å¥³ç§‘", setDoctors1());
+//		Hospital hospital2 = new Hospital("åè¥¿åŒ»é™¢", "å„¿ç«¥ç§‘", setDoctors2());
+//		Hospital hospital3 = new Hospital("ä¸­åŒ»åŒ»é™¢", "ç²¾ç¥ç§‘", setDoctors3());
+//		Hospital hospital4 = new Hospital("ä¸­åŒ»åŒ»é™¢", "äº”å®˜ç§‘", setDoctors4());
+		Hospital hospital1 = new Hospital("åè¥¿åŒ»é™¢");
+		Hospital hospital2 = new Hospital("ä¸­åŒ»åŒ»é™¢");
+		hospital1.setDepartments("å¦‡å¥³ç§‘", setDoctors1());
+		hospital1.setDepartments("å„¿ç«¥ç§‘", setDoctors2());
+		hospital2.setDepartments("ç²¾ç¥ç§‘", setDoctors3());
+		hospital2.setDepartments("äº”å®˜ç§‘", setDoctors4());
 		
 		hospitals.add(hospital1);
 		hospitals.add(hospital2);
@@ -41,11 +41,11 @@ public class Dbfactory {
 	
 	private List<Doctor> setDoctors1(){
 		List<Doctor> list = new ArrayList<Doctor>();
-		Doctor doctor1 = new Doctor("Áõ±¸", "Ö÷ÈÎÒ½Éú");
-		Doctor doctor2 = new Doctor("¹ØÓğ", "¸±Ö÷ÈÎÒ½Éú");
-		Doctor doctor3 = new Doctor("ÕÅ·É", "¸±Ö÷ÈÎÒ½Éú");
-		Doctor doctor4 = new Doctor("ÕÔÔÆ", "×¨¼Ò");
-		Doctor doctor5 = new Doctor("Âí³¬", "×¨¼Ò");
+		Doctor doctor1 = new Doctor("åˆ˜å¤‡", "ä¸»ä»»åŒ»ç”Ÿ");
+		Doctor doctor2 = new Doctor("å…³ç¾½", "å‰¯ä¸»ä»»åŒ»ç”Ÿ");
+		Doctor doctor3 = new Doctor("å¼ é£", "å‰¯ä¸»ä»»åŒ»ç”Ÿ");
+		Doctor doctor4 = new Doctor("èµµäº‘", "ä¸“å®¶");
+		Doctor doctor5 = new Doctor("é©¬è¶…", "ä¸“å®¶");
 		list.add(doctor1);
 		list.add(doctor2);
 		list.add(doctor3);
@@ -56,11 +56,11 @@ public class Dbfactory {
 	
 	private List<Doctor> setDoctors2(){
 		List<Doctor> list = new ArrayList<Doctor>();
-		Doctor doctor1 = new Doctor("ÁõĞşµÂ", "Ö÷ÈÎÒ½Éú");
-		Doctor doctor2 = new Doctor("¹ØÔÆ³¤", "¸±Ö÷ÈÎÒ½Éú");
-		Doctor doctor3 = new Doctor("ÕÅÒíµÂ", "¸±Ö÷ÈÎÒ½Éú");
-		Doctor doctor4 = new Doctor("ÕÔ×Ó»ª", "×¨¼Ò");
-		Doctor doctor5 = new Doctor("ÂíÃÏÆğ", "×¨¼Ò");
+		Doctor doctor1 = new Doctor("åˆ˜ç„å¾·", "ä¸»ä»»åŒ»ç”Ÿ");
+		Doctor doctor2 = new Doctor("å…³äº‘é•¿", "å‰¯ä¸»ä»»åŒ»ç”Ÿ");
+		Doctor doctor3 = new Doctor("å¼ ç¿¼å¾·", "å‰¯ä¸»ä»»åŒ»ç”Ÿ");
+		Doctor doctor4 = new Doctor("èµµå­å", "ä¸“å®¶");
+		Doctor doctor5 = new Doctor("é©¬å­Ÿèµ·", "ä¸“å®¶");
 		list.add(doctor1);
 		list.add(doctor2);
 		list.add(doctor3);
@@ -71,11 +71,11 @@ public class Dbfactory {
 
 	private List<Doctor> setDoctors3(){
 		List<Doctor> list = new ArrayList<Doctor>();
-		Doctor doctor1 = new Doctor("²Ü²Ù", "Ö÷ÈÎÒ½Éú");
-		Doctor doctor2 = new Doctor("ÕÅÁÉ", "¸±Ö÷ÈÎÒ½Éú");
-		Doctor doctor3 = new Doctor("ÀÖ½ø", "¸±Ö÷ÈÎÒ½Éú");
-		Doctor doctor4 = new Doctor("ÓÚ½û", "×¨¼Ò");
-		Doctor doctor5 = new Doctor("Ğì»Î", "×¨¼Ò");
+		Doctor doctor1 = new Doctor("æ›¹æ“", "ä¸»ä»»åŒ»ç”Ÿ");
+		Doctor doctor2 = new Doctor("å¼ è¾½", "å‰¯ä¸»ä»»åŒ»ç”Ÿ");
+		Doctor doctor3 = new Doctor("ä¹è¿›", "å‰¯ä¸»ä»»åŒ»ç”Ÿ");
+		Doctor doctor4 = new Doctor("äºç¦", "ä¸“å®¶");
+		Doctor doctor5 = new Doctor("å¾æ™ƒ", "ä¸“å®¶");
 		list.add(doctor1);
 		list.add(doctor2);
 		list.add(doctor3);
@@ -86,11 +86,11 @@ public class Dbfactory {
 
 	private List<Doctor> setDoctors4(){
 		List<Doctor> list = new ArrayList<Doctor>();
-		Doctor doctor1 = new Doctor("²ÜÃÏµÂ", "Ö÷ÈÎÒ½Éú");
-		Doctor doctor2 = new Doctor("ÕÅÎÄÔ¶", "¸±Ö÷ÈÎÒ½Éú");
-		Doctor doctor3 = new Doctor("ÀÖÎÄÇ«", "¸±Ö÷ÈÎÒ½Éú");
-		Doctor doctor4 = new Doctor("ÓÚÎÄÔò", "×¨¼Ò");
-		Doctor doctor5 = new Doctor("Ğì¹«Ã÷", "×¨¼Ò");
+		Doctor doctor1 = new Doctor("æ›¹å­Ÿå¾·", "ä¸»ä»»åŒ»ç”Ÿ");
+		Doctor doctor2 = new Doctor("å¼ æ–‡è¿œ", "å‰¯ä¸»ä»»åŒ»ç”Ÿ");
+		Doctor doctor3 = new Doctor("ä¹æ–‡è°¦", "å‰¯ä¸»ä»»åŒ»ç”Ÿ");
+		Doctor doctor4 = new Doctor("äºæ–‡åˆ™", "ä¸“å®¶");
+		Doctor doctor5 = new Doctor("å¾å…¬æ˜", "ä¸“å®¶");
 		list.add(doctor1);
 		list.add(doctor2);
 		list.add(doctor3);

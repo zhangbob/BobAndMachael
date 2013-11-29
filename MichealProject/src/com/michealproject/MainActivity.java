@@ -116,7 +116,7 @@ public class MainActivity extends Activity {
 			hospitalPopupWindow = new PopupWindow(v, parent.getWidth(), parent.getHeight() ,true);
 			hospitalPopupWindow.setAnimationStyle(R.style.updownPopupAnim);
 			
-			//º”‘ÿ ˝æ›
+			//Âä†ËΩΩÊï∞ÊçÆ
 			List<Hospital> hospitals = db.getHospitals();
 			final List<Map<String, Object>> data = new ArrayList<Map<String,Object>>();
 			for (Hospital hospital : hospitals) {
