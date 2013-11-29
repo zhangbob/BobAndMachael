@@ -13,6 +13,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -37,15 +38,37 @@ public class MainActivity extends Activity {
 	private Dbfactory db = Dbfactory.getInstance();
 	private View parentView;
 	private TextView hospitalTextView;
-	
-	private String hospitalString = null;
 	private Hospital hospitalBean;
+	
+	private String TAG ="DBTest";
 	
 	
 	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		switch (keyCode) {
+		case KeyEvent.KEYCODE_BACK:
+			Log.i(TAG, "YES");
+			break;
+		default:
+			break;
+		}
+		
+		return super.onKeyDown(keyCode, event);
+	}
+
+	@Override
+	public void onBackPressed() {
+		super.onBackPressed();
+//		Log.i(TAG, "YES");
+//		if (hospitalPopupWindow.isShowing()) {
+//			hospitalPopupWindow.dismiss();
+//		}
+	}
+
+	@Override
 	protected void onPause() {
 		super.onPause();
-		Log.i("DBTest", "onPause");
+		Log.i(TAG, "onPause");
 	}
 
 	@Override
@@ -79,11 +102,7 @@ public class MainActivity extends Activity {
 		hospitalLayout.setOnClickListener(searchSelect);
 		departmentLayout.setOnClickListener(searchSelect);
 		
-		if (hospitalString == null) {
-			departmentLayout.setEnabled(false);
-		}else {
-			departmentLayout.setEnabled(true);
-		}
+		departmentLayout.setEnabled(false);
 	}
 	
 	private final OnClickListener searchSelect = new OnClickListener() {
@@ -98,7 +117,7 @@ public class MainActivity extends Activity {
 				}
 				break;
 			case R.id.search_select_department_layout:
-				Log.i("DBTest", hospitalTextView.getText().toString());
+				Log.i(TAG, hospitalTextView.getText().toString());
 				break;
 			default:
 				break;
@@ -136,6 +155,7 @@ public class MainActivity extends Activity {
 				public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
 					hospitalPopupWindow.dismiss();
 					hospitalTextView.setText((String)data.get(arg2).get("name"));
+					departmentLayout.setEnabled(true);
 				}
 			});
 		}

@@ -8,9 +8,9 @@
     <TextView 
         android:id="@+id/hospital_textView"
         android:textStyle="bold"
-        android:textSize="15dp"
+        android:textSize="20dp"
         android:gravity="center_vertical"
         android:layout_marginLeft="15dp"
         android:layout_width="match_parent"
-        android:layout_height="30dp"/>
+        android:layout_height="50dp"/>
 </LinearLayout>
