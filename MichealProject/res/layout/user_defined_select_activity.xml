@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/med_oder_bar">
+
+        <AutoCompleteTextView
+            android:id="@+id/user_defined_view"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/med_oder_textbox2"
+            android:layout_marginLeft="50dp"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        
+        <ImageView 
+            android:background="@drawable/med_oder_btn_search" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/user_defined_button" />"
+    </LinearLayout>
+    
+    <ListView 
+        android:id="@+id/user_defined_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:divider="@android:color/transparent"
+        android:listSelector="@drawable/list_selector" >
+    </ListView>
+    
+</LinearLayout>

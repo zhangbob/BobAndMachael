@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MichealProject</string>
+    <string name="action_settings">Settings</string>
+    <string name="area_txt">选择区域</string>
+    <string name="hospital_txt">选择医院</string>
+    <string name="department_txt">选择科室</string>
+    <string name="hospital_list">医院列表</string>
+    <string name="order_registration">预约挂号</string>
+
+</resources>

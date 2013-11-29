@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo">
+        <ImageView 
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/med_oder_btn_home"
+            android:layout_centerVertical="true"/>
+        <TextView 
+            android:id="@+id/order_home_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_registration"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+        <ImageView 
+            android:id="@+id/order_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/med_oder_btn_history"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:background="@drawable/med_oder_btn_introdce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	    <TextView 
+	        android:id="@+id/show_place_detail"
+	        android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_centerVertical="true"
+        	android:layout_marginLeft="10dp"
+        	android:text="成都 > 华西妇儿院 > 妇产科"/>
+    </RelativeLayout>
+
+    <ListView 
+        android:id="@+id/doctor_listView"
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"/>
+</LinearLayout>

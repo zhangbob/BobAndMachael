@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/med_oder_bg"
+    android:id="@+id/main_parent_layout" >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:layout_marginTop="160dp"
+		android:background="@drawable/search_select_selector"
+		android:id="@+id/search_select_area_layout"
+		android:layout_alignParentTop="true"
+		android:onClick="false" >
+		
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/area_txt"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentLeft="true"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:layout_marginTop="15dp"
+		android:background="@drawable/search_select_selector"
+		android:id="@+id/search_select_hospital_layout"
+		android:layout_below="@id/search_select_area_layout">
+		
+        <TextView 
+            android:id="@+id/main_hospital_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hospital_txt"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentLeft="true"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/search_select_selector"
+        android:id="@+id/search_select_department_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/search_select_hospital_layout"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/department_txt"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="30dp">
+        
+        <ImageView 
+            android:background="@drawable/search_click_selector"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/search_search_txt_btn"/>
+        
+        <TextView 
+            android:layout_width="match_parent" 
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/register_btn_selector"
+            android:gravity="center"
+            android:id="@+id/search_byself_txt_btn"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+ 
+    </LinearLayout>
+    
+</RelativeLayout>
